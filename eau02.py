@@ -12,4 +12,4 @@ try:
     print(listArgs[::-1]) # print the whole list/array but in reverse
 except ValueError:
     print("ERROR")
-    # write a command to quit the program
+    # write a command to quit the program ?
