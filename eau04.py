@@ -10,48 +10,18 @@ try:
 
     """ Describe function """
     def newPrime(myNum):
-
-        """print(" here is an hint")
-        print(nbersList)
-        incrementList()
         
-        if nbersList[-1] == isPrime:
-            print(nbersList)"""
-
+        print("proof of access")
         
-        
-        nextPrime = myNum+1
-        #mathPrime(nextPrime)
-        
-        while nextPrime != isPrime:
-
-            nextPrime+1
-            #mathPrime(nextPrime)
-
-            if nextPrime == isPrime:
-                print("congratulation !")
-                print(nextPrime)
-                print(nbersList)
-                break
+        upperValue = myNum + 1
+        while mathPrime(upperValue) != isPrime:
+            upperValue+=1
+            if mathPrime(upperValue) == isPrime:
+                print("congrats")
+                print(upperValue)
             else:
                 continue
-            #   break
-            
 
-        #while nextPrime != isPrime:
-        #    nextPrime+=1
-        """if nextPrime != isPrime:
-            print(nextPrime)
-            print("NEIN NEIN NEIN NEIN NEIN ! ! ! ! ! ! ")
-            print(nbersList)
-            #continue
-        elif nextPrime == isPrime:
-            print("congratulation !")
-            print(nextPrime)
-            print(nbersList)
-            #break
-        else:
-            print(" YOLOOOOOO !")"""
 
 
 
@@ -64,8 +34,8 @@ try:
             #print(nbersList)
             
             #####################################
-            
-            basePrime = isPrime
+            # WORKS but display 1
+            """basePrime = isPrime
             nextPrime = 0
             
             while nextPrime != isPrime:
@@ -74,8 +44,30 @@ try:
                     print("congrats")
                     print(nextPrime)
                 else:
-                    continue
+                    continue"""
             
+            #####################################
+            """upperValue = myNum + 1
+            while mathPrime(upperValue) != isPrime:
+                upperValue+=1
+                if mathPrime(upperValue) == isPrime:
+                    print("congrats")
+                    print(upperValue)
+                else:
+                    continue"""
+            
+            #####################################
+            
+            upperValue = myNum + 1
+            print(" connerie de merde !")
+            while mathPrime(upperValue) != mathPrime(isPrime):
+                upperValue+=1
+            if mathPrime(upperValue) == mathPrime(isPrime):
+                print("congrats")
+                print(upperValue)
+                
+            else:
+                pass
             #####################################
 
             #newPrime(isPrime)
@@ -105,7 +97,6 @@ try:
                 resultat = "%d est bien un nombre entier !" % (myNum)
                 print(resultat)
                 isPrime = True
-                #newPrime(isPrime)
 
             # # if last digit is a number dividing by 2 then it is NOT prime
             elif ((myNum % 2 == 0) or (myNum % 2 == 2) or (myNum % 2 == 4) or (myNum % 2 == 5) or (myNum % 2 == 6) or (myNum % 2 == 8)):
@@ -135,25 +126,6 @@ try:
                 resultat = " YES ! %d est bien un nombre entier !" % (myNum)
                 print(resultat)
                 isPrime = True
-                #newPrime(isPrime)
-                ############################################################
-                """if isPrime == True:
-                    nextPrime = myNum+1
-                    #mathPrime(nextPrime)
-                    
-                    while nextPrime != isPrime:
-
-                        nextPrime+1
-                        #mathPrime(nextPrime)
-
-                        if nextPrime == isPrime:
-                            print("congratulation !")
-                            print(nextPrime)
-                            print(nbersList)
-                            break
-                        else:
-                            continue"""
-                ############################################################
 
             #CALL FUNCTION HERE !
             confirmIsPrime(isPrime)
@@ -182,7 +154,7 @@ try:
 
 
     myNum = int(sys.argv[1])
-    nbersList = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+    #nbersList = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
     nextPrime = 0
     isPrime = bool
     #listAdd(myNum)
@@ -190,4 +162,4 @@ try:
     #newPrime(myNum)
 
 except ValueError:
-    print("ERROR ERROR ERROR")
+    print("-1")
