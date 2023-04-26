@@ -13,70 +13,81 @@ try:
         
         print("proof of access")
         
-        upperValue = myNum + 1
-        while mathPrime(upperValue) != isPrime:
-            upperValue+=1
-            if mathPrime(upperValue) == isPrime:
-                print("congrats")
-                print(upperValue)
-            else:
-                continue
+        """upperValue = myNum + 1 # si tu remplaces le "1" par une formule math ?
+
+        if mathPrime(upperValue) == True:
+            print("congrats")
+            print(upperValue)
+            #break
+        elif mathPrime(upperValue) == False:
+            print("the hell is that shit ?")
+            print(upperValue)
+        else:
+            print(" unexpected shit here")
+            #continue"""
 
 
 
 
 
     """ If prime number then look for the next one """
-    def confirmIsPrime(isPrime):
+    def confirmIsPrime():
         # simple verif for now
-        if isPrime == True:
-            print("PRIME NUMBER !")
-            #print(nbersList)
-            
-            #####################################
-            # WORKS but display 1
-            """basePrime = isPrime
-            nextPrime = 0
-            
-            while nextPrime != isPrime:
-                nextPrime+=1
-                if nextPrime == isPrime:
-                    print("congrats")
-                    print(nextPrime)
-                else:
-                    continue"""
-            
-            #####################################
-            """upperValue = myNum + 1
-            while mathPrime(upperValue) != isPrime:
-                upperValue+=1
-                if mathPrime(upperValue) == isPrime:
-                    print("congrats")
-                    print(upperValue)
-                else:
-                    continue"""
-            
-            #####################################
-            
-            upperValue = myNum + 1
-            print(" connerie de merde !")
-            while mathPrime(upperValue) != mathPrime(isPrime):
-                upperValue+=1
+        print("Fuck You !")
+        #print(nbersList)
+        
+        #####################################
+        # WORKS but display 1
+        """basePrime = isPrime
+        nextPrime = 0
+        
+        while nextPrime != isPrime:
+            nextPrime+=1
+            if nextPrime == isPrime:
+                print("congrats")
+                print(nextPrime)
+            else:
+                continue"""
+        
+        #####################################
+        """upperValue = myNum + 1
+        while mathPrime(upperValue) != isPrime:
+            upperValue+=1
+            if mathPrime(upperValue) == isPrime:
+                print("congrats")
+                print(upperValue)
+            else:
+                continue"""
+        
+        #####################################
+        #send help
+        """upperValue = myNum + 1
+        print(" connerie de merde !")
+        while mathPrime(upperValue) != mathPrime(isPrime):
+            upperValue+=1
             if mathPrime(upperValue) == mathPrime(isPrime):
                 print("congrats")
                 print(upperValue)
-                
+                break
             else:
-                pass
-            #####################################
+                continue"""
+        #####################################
+        
+        #send help
+        """loop = True
+        upperValue = myNum + 1
+        primeNumber = myNum
+        print(" connerie de merde !")
+        while loop:
+            upperValue+=1
+            if upperValue == primeNumber:
+                print("congrats")
+                print(upperValue)
+                loop=False
+            else:
+                continue"""
+        #####################################
 
-            #newPrime(isPrime)
-
-        elif isPrime == False:
-            print("NOT a prime number !")
-            #print(nbersList)
-        else:
-            print(" I am tired of this shit ")
 
 
 
@@ -84,51 +95,43 @@ try:
     """ Define if a digit/number is a prime one or not   +  other function ? """
     def mathPrime(myNum):
         try:
-            #myNum = int(sys.argv[1])
+
+            wrongResult = " %d n'est pas un nombre premier " % (myNum)
+            goodResult = " %d est un nombre premier " % (myNum)
 
             # 0 and 1 are NOT prime digits
             if myNum == 0 or myNum == 1:
-                resultat = "%d n'est pas un nombre entier !" % (myNum)
-                print(resultat)
-                isPrime = False
+                print(wrongResult)
 
             # 2, 3, 5 and 7 ARE prime digits
             elif myNum == 2 or myNum == 3 or myNum == 5 or myNum == 7:
-                resultat = "%d est bien un nombre entier !" % (myNum)
-                print(resultat)
-                isPrime = True
+                print(goodResult)
+                isPrime = myNum
+            
 
             # # if last digit is a number dividing by 2 then it is NOT prime
             elif ((myNum % 2 == 0) or (myNum % 2 == 2) or (myNum % 2 == 4) or (myNum % 2 == 5) or (myNum % 2 == 6) or (myNum % 2 == 8)):
-                resultat = "%d n'est pas un nombre entier !" % (myNum)
-                print(resultat)
-                isPrime = False
+                print(wrongResult)
 
             # if last digit is a number dividing by 3 then it is NOT prime
             elif ((myNum % 3 == 0) or (myNum % 3 == 3) or (myNum % 3 == 6) or (myNum % 3 == 9)):
-                resultat = "%d n'est pas un nombre entier !" % (myNum)
-                print(resultat)
-                isPrime = False
+                print(wrongResult)
 
             # if last digit is a number dividing by 4 then it is NOT prime
             elif ((myNum % 4 == 0) or (myNum % 4 == 2) or (myNum % 4 == 4) or (myNum % 4 == 5) or (myNum % 4 == 6) or (myNum % 4 == 8)):
-                resultat = "%d n'est pas un nombre entier !" % (myNum)
-                print(resultat)
-                isPrime = False
+                print(wrongResult)
 
             # if last digit is a number dividing by 5 then it is NOT prime
             elif (myNum % 5 == 0) or (myNum % 5 == 5):
-                resultat = "%d n'est pas un nombre entier !" % (myNum)
-                print(resultat)
-                isPrime = False
+                print(wrongResult)
 
+            # after all the verifications above, the rest can be only a prime number
             else:
-                resultat = " YES ! %d est bien un nombre entier !" % (myNum)
-                print(resultat)
-                isPrime = True
+                print(goodResult)
+                isPrime = myNum
 
             #CALL FUNCTION HERE !
-            confirmIsPrime(isPrime)
+            #confirmIsPrime(isPrime)
 
         except ValueError:
             print("Never trust the user !!!")
@@ -159,7 +162,7 @@ try:
     isPrime = bool
     #listAdd(myNum)
     mathPrime(myNum)
-    #newPrime(myNum)
+    newPrime(myNum)
 
 except ValueError:
     print("-1")
