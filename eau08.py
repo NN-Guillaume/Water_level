@@ -3,3 +3,30 @@
 # Créer un programme qui détermine si une chaîne de caractère ne contient que des chiffres.
 # Les mots ne sont délimités que par un espace, une tabulation ou un retour à la ligne.
 # Afficher "ERROR" et quitter le programme en cas de problèmes d'arguments
+
+import sys
+
+# Evaluate if int or not in string
+def isIntOrNot(arg):
+    isInteger = True
+
+    try:
+        int(arg)
+    except ValueError:
+        isInteger = False
+    
+    if isInteger:
+        print(" Good ")
+    else:
+        print(" Wrong ")
+
+
+try:
+    myTesting = str(sys.argv[1])
+except:
+    sys.exit(" ERROR ")
+
+
+isIntOrNot(myTesting)
+
+
