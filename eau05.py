@@ -31,11 +31,13 @@ def atStartOrAtEnd(arg1, arg2):
     else:
         print("unexpected event")
 
+
 try:
     input01 = str(sys.argv[1]) # Bonjour
     input02 = str(sys.argv[2]) # jour
 except:
     sys.exit(" ERROR ")
+
 
 # print(splitArgv(input01))
 splitArgv(input01)
