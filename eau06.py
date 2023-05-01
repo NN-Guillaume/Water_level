@@ -38,8 +38,9 @@ def lowerCase(arg):
 
 try:
     myStr = str(sys.argv[1]) # "Hello World !"  must become  "HeLlO wOrLd !"
-except:
-    sys.exit(" ERROR ")
+except ValueError:
+    if sys.argv[1] == int:
+        sys.exit(" ERROR ")
 
 
 upper1on2(myStr)
