@@ -4,3 +4,37 @@
 # Min INCLUS
 # Max EXCLUS
 # Afficher "ERROR" et quitter le programme en cas de problèmes d'arguments
+#exemple ---> 20 25             display --->  20  21  22  23  24
+
+import sys
+
+input01 = int(sys.argv[1])
+input02 = int(sys.argv[2])
+
+if input01 <= input02:
+    minVal = input01
+    xElements = input02 - input01
+elif input01 >= input02:
+    minVal = input02
+    xElements = input01 - input02
+else:
+    print(" unexpected error ")
+#print(xElements)
+
+myList = []
+
+myList.append(minVal)
+
+while len(myList) <= xElements:
+    lastPos = myList[-1]
+    newVal  = lastPos + 1
+    myList.append(newVal)
+    
+    if len(myList) == xElements:
+        print(myList)
+        break
+    
+    else:
+        continue
+
+#print(myList)
