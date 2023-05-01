@@ -5,3 +5,20 @@
 # L'élément recherché est le DERNIER argument.
 # Afficher -1 si l'élément n'est pas trouvé.
 # Afficher "ERROR" et quitter le programme en cas de problèmes d'arguments
+
+# Exemple ---> Macron is a fucking criminal who must die in a slow and painful way fucking
+#              stat of the list                                        end of list      fucking is the argument to look for
+# "fucking" is in the third position ---> display ---> "3"
+
+import sys
+
+def modifyAndGetIndex(arg1, arg2):
+    splitSent = arg1.rsplit(" ")    # try to write your own code instead of using "rsplit()"
+    #print(splitSent)
+    result = splitSent.index(arg2)
+    print(result)
+
+sentence = str(sys.argv[1])
+lookFor = str(sys.argv[2])
+
+modifyAndGetIndex(sentence, lookFor)

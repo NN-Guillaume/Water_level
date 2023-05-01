@@ -19,7 +19,6 @@ elif input01 >= input02:
     xElements = input01 - input02
 else:
     print(" unexpected error ")
-#print(xElements)
 
 myList = []
 
@@ -36,5 +35,3 @@ while len(myList) <= xElements:
     
     else:
         continue
-
-#print(myList)
