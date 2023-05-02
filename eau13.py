@@ -13,8 +13,6 @@ testInput = str(sys.argv[1])
 # this below turn the string of numbers into a list of integers INSTEAD OF a list of string numbers
 listToOrdo = list(map(int, testInput.split()))
 
-#listToOrdo = [6, 5, 10, 4, 7, 8, 3, 9, 2, 1]
-
 def selectionSort(list):
     for num in range(len(list)):
         minNum = num
