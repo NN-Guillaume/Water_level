@@ -8,7 +8,7 @@
 
 import sys
 
-# exemple of use --->       "6 5 10 4 7 8 3 9 2 1"
+# exemple of use --->       "5 3 1 4 2"
 testInput = str(sys.argv[1])
 # this below turn the string of numbers into a list of integers INSTEAD OF a list of string numbers
 listToOrdo = list(map(int, testInput.split()))
