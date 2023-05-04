@@ -8,10 +8,13 @@
 
 import sys
 
-# exemple of use --->       "5 3 1 4 2"
-testInput = str(sys.argv[1])
-# this below turn the string of numbers into a list of integers INSTEAD OF a list of string numbers
-listToOrdo = list(map(int, testInput.split()))
+try:
+    # exemple of use --->       "5 3 1 4 2"
+    testInput = str(sys.argv[1])
+    # this below turn the string of numbers into a list of integers INSTEAD OF a list of string numbers
+    listToOrdo = list(map(int, testInput.split()))
+except:
+    sys.exit(" ERROR ")
 
 def selectionSort(list):
     for num in range(len(list)):

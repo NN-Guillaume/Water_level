@@ -10,6 +10,6 @@ try:
     listArgs = arguments.rsplit(" ") 
 
     print(listArgs[::-1]) # print the whole list/array but in reverse
-except ValueError:
-    print("ERROR")
-    # write a command to quit the program ?
+except:
+    print(" ERROR ")
+    sys.exit(" EXIT ")

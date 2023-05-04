@@ -18,7 +18,13 @@ def modifyAndGetIndex(arg1, arg2):
     result = splitSent.index(arg2)
     print(result)
 
-sentence = str(sys.argv[1])
-lookFor = str(sys.argv[2])
+def manageResult(arg1, arg2):
+    pass
+
+try:
+    sentence = str(sys.argv[1])
+    lookFor = str(sys.argv[2])
+except:
+    sys.exit(" ERROR ")
 
 modifyAndGetIndex(sentence, lookFor)

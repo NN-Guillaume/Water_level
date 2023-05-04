@@ -8,8 +8,11 @@
 
 import sys
 
-input01 = int(sys.argv[1])
-input02 = int(sys.argv[2])
+try:
+    input01 = int(sys.argv[1])
+    input02 = int(sys.argv[2])
+except:
+    sys.exit(" ERROR ")
 
 if input01 <= input02:
     minVal = input01

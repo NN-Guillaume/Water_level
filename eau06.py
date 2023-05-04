@@ -5,7 +5,6 @@
 
 import sys
 
-
 # manage the letters transformation
 def upper1on2(arg):
     count = 0
@@ -38,9 +37,9 @@ def lowerCase(arg):
 
 try:
     myStr = str(sys.argv[1]) # "Hello World !"  must become  "HeLlO wOrLd !"
-except ValueError:
-    if sys.argv[1] == int:
-        sys.exit(" ERROR ")
+except:
+    if sys.argv[1] == int:  # can't access "myStr" from here
+        sys.exit(" ERROR ") # doesn't works  :-(
 
 
 upper1on2(myStr)

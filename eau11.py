@@ -6,10 +6,13 @@
 
 import sys
 
-# exemple of use --->       "10 6 5 9 48"
-testInput = str(sys.argv[1])
-# this below turn the string of numbers into a list of integers INSTEAD OF a list of string numbers
-testList = list(map(int, testInput.split()))
+try:
+    # exemple of use --->       "10 6 5 9 48"
+    testInput = str(sys.argv[1])
+    # this below turn the string of numbers into a list of integers INSTEAD OF a list of string numbers
+    testList = list(map(int, testInput.split()))
+except:
+    sys.exit(" ERROR ")
 
 newList = []
 

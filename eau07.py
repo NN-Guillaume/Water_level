@@ -11,11 +11,11 @@ import sys
 def upper1on2(arg):
     count = 0
     for i in arg:
-        
-        if i == " " or i == "-":
+
+        if i == " ":
             manageBlank(i)
             count = 0
-            
+
         else:
             count += 1
             if count == 1:
@@ -25,7 +25,6 @@ def upper1on2(arg):
 
 # put back the space at their right place
 def manageBlank(arg):
-    #blankCase = arg.isspace()
     blankCase = " "
     print(blankCase, end=' ')
 
@@ -42,7 +41,7 @@ def lowerCase(arg):
 
 try:
     myStr = str(sys.argv[1]) # "hello my dude, how are you doing ?"  Hello My Dude, How Are You Doing ?"
-except ValueError:
+except:
     if sys.argv[1] == int:
         sys.exit(" ERROR ")
 

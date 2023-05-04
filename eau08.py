@@ -16,9 +16,9 @@ def isIntOrNot(arg):
         isInteger = False
     
     if isInteger:
-        print(" Good ")
+        print(" True ")
     else:
-        print(" Wrong ")
+        print(" False ")
 
 
 try:
