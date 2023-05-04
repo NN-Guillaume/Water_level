@@ -11,7 +11,7 @@ import sys
 base = [0, 1, 1, 2]
 
 
-""" build a list by adding the last and before-last values together"""
+#build a list by adding the last and before-last values together
 def mathFibo ():
     end_nber = base[-1] # get the last element in the list
     before_end = base[-2] # get the before-last element in the list

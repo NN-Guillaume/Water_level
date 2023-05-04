@@ -4,26 +4,33 @@
 
 "ce truc n'a ni queue ni tête !"
 
+def goUp(leftArg, rightArg):
+
+    display = (" %d  %d " % (leftArg, rightArg))
+
+    while leftArg != 99 and rightArg != 99:
+
+        if rightArg == 0 or rightArg <= 99:
+
+            rightArg += 1
+            print("R = %d" % (rightArg))
+
+            if rightArg == 99 and leftArg <= 99:
+
+                leftArg += 1
+                rightArg = 0
+                print("L = %d" % (leftArg))
+
+            #print(display, end=' ') # FUCKING ENDLESS 0 ! ! !
+
+        elif rightArg == 99 and leftArg == 99:
+            print(" E N D ")
+            break
+
+        else:
+            continue
+
 leftCount = 0
 rightCount = 0
-display = (" %d  %d " % (leftCount, rightCount))
 
-
-while leftCount <= 99 and rightCount <= 99:
-    
-    rightCount += 1
-    
-    if rightCount == 99 and leftCount < 99:
-        leftCount += 1
-        rightCount = 0
-        print(display)
-        continue
-    
-    if leftCount == 99 and rightCount == 99:
-        print("you have reached 99  99 and the end of the given possibility")
-        break
-    
-    else:
-        continue
-
-print(display)
+goUp(leftCount, rightCount)
