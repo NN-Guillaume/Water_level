@@ -12,19 +12,21 @@
 
 import sys
 
-def modifyAndGetIndex(arg1, arg2):
-    splitSent = arg1.rsplit(" ")    # try to write your own code instead of using "rsplit()"
-    #print(splitSent)
-    result = splitSent.index(arg2)
-    print(result)
+def getIndex(arg1, arg2):
+    try:
+        splitSent = arg1.rsplit(" ")    # try to write your own code instead of using "rsplit()"
+        print(splitSent)
+        result = splitSent.index(arg2)
+        print(result)
+    except:
+        print(" -1 ") #print "-1" if arg2 do not match anything in arg1
 
-def manageResult(arg1, arg2):
-    pass
 
 try:
     sentence = str(sys.argv[1])
     lookFor = str(sys.argv[2])
-except:
+except IndexError:
     sys.exit(" ERROR ")
 
-modifyAndGetIndex(sentence, lookFor)
+
+getIndex(sentence, lookFor)

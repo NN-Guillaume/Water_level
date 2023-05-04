@@ -24,7 +24,7 @@ def upper1on2(arg):
                 lowerCase(i)
 
 # put back the space at their right place
-def manageBlank(arg):
+def manageBlank(blankCase):
     blankCase = " "
     print(blankCase, end=' ')
 
@@ -41,9 +41,8 @@ def lowerCase(arg):
 
 try:
     myStr = str(sys.argv[1]) # "hello my dude, how are you doing ?"  Hello My Dude, How Are You Doing ?"
-except:
-    if sys.argv[1] == int:
-        sys.exit(" ERROR ")
+except IndexError:
+    sys.exit(" ERROR ")
 
 
 upper1on2(myStr)

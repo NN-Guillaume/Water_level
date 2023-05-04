@@ -8,7 +8,7 @@ import sys
 # will calculate the next Prime number even if the input is not a Prime number
 def nextPrimeAnyway(n):
 
-    newVal = n + 1
+    newVal = n
 
     while not isPrimeNumber(newVal):
 
@@ -18,6 +18,7 @@ def nextPrimeAnyway(n):
         if isPrimeNumber(newVal):
             #print(" proof of access #1 ")
             print(newVal)
+            break
 
         else:
             continue
