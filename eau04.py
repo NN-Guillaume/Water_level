@@ -90,9 +90,11 @@ def isPrimeNumber(myNum):
     except ValueError:
         print(" -1 ")
 
+
 try:
     myNum = int(sys.argv[1])
 except:
     sys.exit(" -1 ")
+
 
 nextPrimeAnyway(myNum)
