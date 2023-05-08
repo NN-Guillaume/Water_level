@@ -7,9 +7,11 @@ import sys
 
 try:
     arguments = str(sys.argv[1]) # exemple --->     "1000 milliards de 1000 millions de 1000 sabords !"
-    listArgs = arguments.rsplit(" ") 
+    listArgs = arguments.rsplit(" ")
+    reverseList = (listArgs[::-1])
+    displayStr = " ".join(reverseList) 
+    print(displayStr) # print the arguments but in reverse
 
-    print(listArgs[::-1]) # print the whole list/array but in reverse
 except:
     print(" ERROR ")
     sys.exit(" EXIT ")
