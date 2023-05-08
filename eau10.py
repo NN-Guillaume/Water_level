@@ -6,7 +6,7 @@
 # Afficher -1 si l'élément n'est pas trouvé.
 # Afficher "ERROR" et quitter le programme en cas de problèmes d'arguments
 
-# Exemple ---> Macron is a fucking criminal who must die in a slow and painful way fucking
+# Exemple ---> "Macron is a fucking criminal who must die in a slow and painful way" "fucking"
 #              stat of the list                                        end of list      fucking is the argument to look for
 # "fucking" is in the third position ---> display ---> "3"
 

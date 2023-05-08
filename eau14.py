@@ -10,7 +10,7 @@
 import sys
 
 try:
-    # exemple of use --->       "Opel, Mercedes, BMW, Lamborghini"   or  "A Z E R T Y"
+    # exemple of use --->       "Opel, Mercedes, BMW, Lamborghini, Bugatti"   or  "A Z E R T Y"
     testInput = str(sys.argv[1])
     listToOrdo = list(testInput.split(" "))
     #print(listToOrdo)

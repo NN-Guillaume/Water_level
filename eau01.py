@@ -2,8 +2,6 @@
 
 # Créer un programme qui affiche toutes les différentes combinaisons de 2 nombres entre 00 et 99 dans l'ordre croissant.
 
-"ce truc n'a ni queue ni tête !"
-
 def goUp(leftArg, rightArg):
 
     display = (" %d  %d " % (leftArg, rightArg))
@@ -21,7 +19,7 @@ def goUp(leftArg, rightArg):
                 rightArg = 0
                 print("L = %d" % (leftArg))
 
-            #print(display, end=' ') # FUCKING ENDLESS 0 ! ! !
+                #print(display, end=' ') # FUCKING ENDLESS 0 ! ! !
 
         elif rightArg == 99 and leftArg == 99:
             print(" E N D ")

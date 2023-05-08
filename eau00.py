@@ -4,8 +4,6 @@
 #                                                                                                           dans l'ordre croissant.
 #                                                                                                           répétition volontaire ( WTF ??? )
 
-"ce truc n'a ni queue ni tête !"
-
 import sys
 
 numList = []

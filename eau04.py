@@ -8,7 +8,7 @@ import sys
 # will calculate the next Prime number even if the input is not a Prime number
 def nextPrimeAnyway(n):
 
-    newVal = n
+    newVal = n + 1
 
     while not isPrimeNumber(newVal):
 
