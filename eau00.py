@@ -34,12 +34,53 @@ removeDouble()
 
 #----------------------------------------------------------------------------------------------------------------------------
 
-for x in range(0, 20):
-    print(f'{x:03}') # display numbers as 000, 001, 002, etc...
+#for x in range(0, 20):
+#    print(f'{x:03}') # display numbers as 000, 001, 002, etc...
 
-# How the fuck do I say that 012 is the same as 021, 102, 120, 201, 
+# How the fuck do I say that 012 is the same as 021, 102, 120, 201 ?!!!
 
-#-------------------------------------------------------------------
+#----------------------------------------------------------------------------------------------------------------------------
+
+def combinations(list):
+    
+    hiddenList = []
+    displayList = []
+    
+    for i in range(3):
+        for j in range(3):
+            for k in range(3):
+                
+                #check if index are the same
+                if (i != j and j != k and i != k):
+                    #print(list[i], list[j], list[k])
+                    hiddenList.append([i, j, k])
+                
+                if (i != j or j != k or i != k):
+                    #print(list[i], list[j], list[k])
+                    hiddenList.append([i, j, k])
+                
+                else:
+                    #print(list[i], list[j], list[k])
+                    displayList.append([i, j, k])
+                    print(displayList)
+
+baseCount = 12
+print(f'{baseCount:03}')
+
+while baseCount != 789:
+    
+    baseCount += 1
+    combinations(baseCount)
+    
+    if baseCount == 789:
+        print(" END ")
+
+    else:
+        continue
+
+#combinations([0, 1, 2])
+
+#----------------------------------------------------------------------------------------------------------------------------
 
 # 00x = no 0x0 and no x00
 # 001 = no 010 and no 100
