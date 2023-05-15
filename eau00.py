@@ -32,11 +32,3 @@ def generateNum():
 
 generateNum()
 removeDouble()
-#print(numList)
-
-# trier les "doublons"
-
-# transformer en nombre normaux pour présentation du résultat final
-# ', '.join(str(e) for e in numList)
-
-#print(numList)

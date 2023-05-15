@@ -28,7 +28,9 @@ def goUp(leftArg, rightArg):
         else:
             continue
 
+
 leftCount = 0
 rightCount = 0
+
 
 goUp(leftCount, rightCount)

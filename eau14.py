@@ -9,13 +9,11 @@
 
 import sys
 
-try:
-    # exemple of use --->       "Opel, Mercedes, BMW, Lamborghini, Bugatti"   or  "A Z E R T Y"
-    testInput = str(sys.argv[1])
-    listToOrdo = list(testInput.split(" "))
-    #print(listToOrdo)
-except:
-    sys.exit(" ERROR ")
+
+def returnToString(li):
+    simpleStr = ' '.join(map(str, li))
+    print(simpleStr, end=' ')
+
 
 def bubbleSort(list):
     permutation = True
@@ -31,5 +29,16 @@ def bubbleSort(list):
     
     return list
 
+
+try:
+    # exemple of use --->       "Opel Mercedes-Benz BMW Lamborghini Bugatti"   or  "A Z E R T Y"
+    testInput = str(sys.argv[1])
+    listToOrdo = list(testInput.split(" "))
+    #print(listToOrdo)
+except:
+    sys.exit(" ERROR ")
+
+
 bubbleSort(listToOrdo)
-print(listToOrdo)
+#print(listToOrdo)
+returnToString(listToOrdo)

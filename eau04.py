@@ -5,6 +5,7 @@
 
 import sys
 
+
 # will calculate the next Prime number even if the input is not a Prime number
 def nextPrimeAnyway(n):
 
@@ -22,6 +23,7 @@ def nextPrimeAnyway(n):
 
         else:
             continue
+
 
 # will calculate the next Prime number IF the input is a Prime number
 def nextPrime(n):
@@ -44,6 +46,7 @@ def nextPrime(n):
 
     else: #si ce n'est PAS un nombre premier
         print(" NOT prime ")
+
 
 # Define if a digit/number is a prime one or not
 def isPrimeNumber(myNum):

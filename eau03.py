@@ -7,7 +7,9 @@
 
 import sys
 
+
 base = [0, 1, 1, 2]
+
 
 #build a list by adding the last and before-last values together
 def mathFibo ():
@@ -23,6 +25,7 @@ try:
     indice = int(sys.argv[1])
 except:
     sys.exit(" -1 ")
+
 
 while indice != len(base)-1:
     mathFibo()

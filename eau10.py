@@ -12,10 +12,11 @@
 
 import sys
 
+
 def getIndex(arg1, arg2):
     try:
-        splitSent = arg1.rsplit(" ")    # try to write your own code instead of using "rsplit()"
-        print(splitSent)
+        splitSent = arg1.rsplit(" ")
+        #print(splitSent)
         result = splitSent.index(arg2)
         print(result)
     except:

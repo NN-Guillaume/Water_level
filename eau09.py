@@ -8,11 +8,13 @@
 
 import sys
 
+
 try:
     input01 = int(sys.argv[1])
     input02 = int(sys.argv[2])
 except:
     sys.exit(" ERROR ")
+
 
 if input01 <= input02:
     minVal = input01
@@ -23,9 +25,12 @@ elif input01 >= input02:
 else:
     print(" unexpected error ")
 
+
 myList = []
 
+
 myList.append(minVal)
+
 
 while len(myList) <= xElements:
     lastPos = myList[-1]

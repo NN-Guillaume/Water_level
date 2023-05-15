@@ -5,6 +5,7 @@
 
 import sys
 
+
 try:
     arguments = str(sys.argv[1]) # exemple --->     "1000 milliards de 1000 millions de 1000 sabords !"
     listArgs = arguments.rsplit(" ")
@@ -14,6 +15,7 @@ try:
     # the code below convert into a string and print in reverse on a single line
     #displayStr = " ".join(reverseList) 
     #print(displayStr) # print the arguments but in reverse
+
 
 except:
     print(" ERROR ")

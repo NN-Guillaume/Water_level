@@ -5,6 +5,7 @@
 
 import sys
 
+
 # manage the letters transformation
 def upper1on2(arg):
     count = 0
@@ -18,16 +19,19 @@ def upper1on2(arg):
             elif count % 2 == 0:
                 lowerCase(i)
 
+
 # put back the space at their right place
 def manageBlank(blankCase):
     #blankCase = arg.isspace()
     blankCase = " "
     print(blankCase, end=' ')
 
+
 # transform to uppercase
 def upperCase(arg):
     upCase = arg.upper()
     print(upCase, end=' ')
+
 
 # transform to lowercase
 def lowerCase(arg):

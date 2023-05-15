@@ -6,6 +6,7 @@
 
 import sys
 
+
 try:
 # exemple of use --->       "5 3 1 4 2"
     testInput = str(sys.argv[1])
@@ -13,6 +14,7 @@ try:
     listToOrdo = list(map(int, testInput.split()))
 except:
     sys.exit(" ERROR ")
+
 
 def bubbleSort(list):
     permutation = True
@@ -27,6 +29,7 @@ def bubbleSort(list):
                 permutation = True
     
     return list
+
 
 bubbleSort(listToOrdo)
 print(listToOrdo)

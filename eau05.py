@@ -5,9 +5,11 @@
 
 import sys
 
+
 # turn the string into a list
 def splitArgv(string):
     return list(string)
+
 
 # verify the elements in common, works even if not attached to each others
 def sameElem(arg1, arg2):
@@ -15,7 +17,7 @@ def sameElem(arg1, arg2):
         for y in arg2:
             if x == y:
                 verdict = True
-                print("TRUE")
+                #print("TRUE")
                 return verdict
 
 

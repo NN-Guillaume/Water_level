@@ -6,6 +6,7 @@
 
 import sys
 
+
 try:
     # exemple of use --->       "10 6 5 9 48"
     testInput = str(sys.argv[1])
@@ -14,12 +15,15 @@ try:
 except:
     sys.exit(" ERROR ")
 
+
 newList = []
+
 
 # Put all the numbers in order, according to upper exemple ---> [5, 6, 9, 10, 48]
 def sortList(arglist):
     arglist.sort()
     #print(arglist)
+
 
 # Got the value by substracting number n+1 by n, according to upper exemple ---> [1, 3, 1, 38, 48]
 def getInterValues(arglist):
@@ -34,11 +38,13 @@ def getInterValues(arglist):
             newList.append(elem)
     #print(newList)
 
+
 # Remove the last position number and get the smallest value, according to upper exemple ---> [1, 3, 1, 38] ---> "1"
 def getSmallest(newarg):
     newarg.pop(-1)
     fuckingMin = min(newarg)
     print(fuckingMin)
+
 
 getInterValues(testList)
 getSmallest(newList)

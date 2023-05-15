@@ -23,15 +23,18 @@ def upper1on2(arg):
             elif count >= 0:
                 lowerCase(i)
 
+
 # put back the space at their right place
 def manageBlank(blankCase):
     blankCase = " "
     print(blankCase, end=' ')
 
+
 # transform to uppercase
 def upperCase(arg):
     upCase = arg.upper()
     print(upCase, end=' ')
+
 
 # transform to lowercase
 def lowerCase(arg):

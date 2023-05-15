@@ -6,6 +6,7 @@
 
 import sys
 
+
 # Evaluate if int or not in string
 def isIntOrNot(arg):
     isInteger = True
