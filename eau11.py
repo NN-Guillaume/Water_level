@@ -7,27 +7,15 @@
 import sys
 
 
-try:
-    # exemple of use --->       "10 6 5 9 48"
-    testInput = str(sys.argv[1])
-    # this below turn the string of numbers into a list of integers INSTEAD OF a list of string numbers
-    testList = list(map(int, testInput.split()))
-except:
-    sys.exit(" ERROR ")
-
-
-newList = []
-
-
 # Put all the numbers in order, according to upper exemple ---> [5, 6, 9, 10, 48]
-def sortList(arglist):
+def sort_list(arglist):
     arglist.sort()
     #print(arglist)
 
 
 # Got the value by substracting number n+1 by n, according to upper exemple ---> [1, 3, 1, 38, 48]
-def getInterValues(arglist):
-    sortList(arglist)
+def get_inter_values(arglist):
+    sort_list(arglist)
     index = int
     elem = int
     for index, elem in enumerate(arglist):
@@ -40,11 +28,23 @@ def getInterValues(arglist):
 
 
 # Remove the last position number and get the smallest value, according to upper exemple ---> [1, 3, 1, 38] ---> "1"
-def getSmallest(newarg):
+def get_smallest(newarg):
     newarg.pop(-1)
     fuckingMin = min(newarg)
     print(fuckingMin)
 
 
-getInterValues(testList)
-getSmallest(newList)
+try:
+    # exemple of use --->       "10 6 5 9 48"
+    testInput = str(sys.argv[1])
+    # this below turn the string of numbers into a list of integers INSTEAD OF a list of string numbers
+    testList = list(map(int, testInput.split()))
+except:
+    sys.exit(" ERROR ")
+
+
+newList = []
+
+
+get_inter_values(testList)
+get_smallest(newList)

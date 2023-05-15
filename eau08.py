@@ -8,7 +8,7 @@ import sys
 
 
 # Evaluate if int or not in string
-def isIntOrNot(arg):
+def is_int_or_not(arg):
     isInteger = True
 
     try:
@@ -28,6 +28,6 @@ except:
     sys.exit(" ERROR ")
 
 
-isIntOrNot(myTesting)
+is_int_or_not(myTesting)
 
 

@@ -2,7 +2,7 @@
 
 # Créer un programme qui affiche toutes les différentes combinaisons de 2 nombres entre 00 et 99 dans l'ordre croissant.
 
-def goUp(leftArg, rightArg):
+def go_up(leftArg, rightArg):
 
     display = (" %d  %d " % (leftArg, rightArg))
 
@@ -33,4 +33,4 @@ leftCount = 0
 rightCount = 0
 
 
-goUp(leftCount, rightCount)
+go_up(leftCount, rightCount)

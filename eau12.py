@@ -7,16 +7,7 @@
 import sys
 
 
-try:
-# exemple of use --->       "5 3 1 4 2"
-    testInput = str(sys.argv[1])
-    # this below turn the string of numbers into a list of integers INSTEAD OF a list of string numbers
-    listToOrdo = list(map(int, testInput.split()))
-except:
-    sys.exit(" ERROR ")
-
-
-def bubbleSort(list):
+def bubble_sort(list):
     permutation = True
     passage = 0
     while permutation:
@@ -31,5 +22,14 @@ def bubbleSort(list):
     return list
 
 
-bubbleSort(listToOrdo)
+try:
+# exemple of use --->       "5 3 1 4 2"
+    testInput = str(sys.argv[1])
+    # this below turn the string of numbers into a list of integers INSTEAD OF a list of string numbers
+    listToOrdo = list(map(int, testInput.split()))
+except:
+    sys.exit(" ERROR ")
+
+
+bubble_sort(listToOrdo)
 print(listToOrdo)

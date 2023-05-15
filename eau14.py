@@ -10,12 +10,12 @@
 import sys
 
 
-def returnToString(li):
+def return_to_string(li):
     simpleStr = ' '.join(map(str, li))
     print(simpleStr, end=' ')
 
 
-def bubbleSort(list):
+def bubble_sort(list):
     permutation = True
     passage = 0
     while permutation:
@@ -39,6 +39,6 @@ except:
     sys.exit(" ERROR ")
 
 
-bubbleSort(listToOrdo)
+bubble_sort(listToOrdo)
 #print(listToOrdo)
-returnToString(listToOrdo)
+return_to_string(listToOrdo)

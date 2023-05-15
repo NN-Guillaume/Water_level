@@ -13,7 +13,7 @@
 import sys
 
 
-def getIndex(arg1, arg2):
+def get_index(arg1, arg2):
     try:
         splitSent = arg1.rsplit(" ")
         #print(splitSent)
@@ -30,4 +30,4 @@ except IndexError:
     sys.exit(" ERROR ")
 
 
-getIndex(sentence, lookFor)
+get_index(sentence, lookFor)

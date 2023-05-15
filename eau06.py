@@ -7,34 +7,34 @@ import sys
 
 
 # manage the letters transformation
-def upper1on2(arg):
+def upper_1_on_2(arg):
     count = 0
     for i in arg:
         if i == " ":
-            manageBlank(i)
+            manage_blank(i)
         else:
             count += 1
             if count % 2 == 1:
-                upperCase(i)
+                upper_case(i)
             elif count % 2 == 0:
-                lowerCase(i)
+                lower_case(i)
 
 
 # put back the space at their right place
-def manageBlank(blankCase):
+def manage_blank(blankCase):
     #blankCase = arg.isspace()
     blankCase = " "
     print(blankCase, end=' ')
 
 
 # transform to uppercase
-def upperCase(arg):
+def upper_case(arg):
     upCase = arg.upper()
     print(upCase, end=' ')
 
 
 # transform to lowercase
-def lowerCase(arg):
+def lower_case(arg):
     lowCase = arg.lower()
     print(lowCase, end=' ')
 
@@ -45,4 +45,4 @@ except IndexError:
     sys.exit(" ERROR ")
 
 
-upper1on2(myStr)
+upper_1_on_2(myStr)

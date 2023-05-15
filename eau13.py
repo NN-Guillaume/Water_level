@@ -9,16 +9,7 @@
 import sys
 
 
-try:
-    # exemple of use --->       "5 3 1 4 2"
-    testInput = str(sys.argv[1])
-    # this below turn the string of numbers into a list of integers INSTEAD OF a list of string numbers
-    listToOrdo = list(map(int, testInput.split()))
-except:
-    sys.exit(" ERROR ")
-
-
-def selectionSort(list):
+def selection_sort(list):
     for num in range(len(list)):
         minNum = num
         for i in range(num, len(list)):
@@ -30,5 +21,14 @@ def selectionSort(list):
     return list
 
 
-selectionSort(listToOrdo)
+try:
+    # exemple of use --->       "5 3 1 4 2"
+    testInput = str(sys.argv[1])
+    # this below turn the string of numbers into a list of integers INSTEAD OF a list of string numbers
+    listToOrdo = list(map(int, testInput.split()))
+except:
+    sys.exit(" ERROR ")
+
+
+selection_sort(listToOrdo)
 print(listToOrdo)

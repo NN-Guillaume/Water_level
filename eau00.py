@@ -41,7 +41,7 @@ removeDouble()
 
 #----------------------------------------------------------------------------------------------------------------------------
 
-def combinations(list):
+def combinations(num):
     
     hiddenList = []
     displayList = []

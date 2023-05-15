@@ -9,6 +9,35 @@
 import sys
 
 
+def from_min_to_max_minus_1(val1, val2):
+    
+    myList = []
+    
+    if val1 <= val2:
+        minVal = val1
+        xElements = val2 - val1
+    elif val1 >= val2:
+        minVal = val2
+        xElements = val1 - val2
+    else:
+        print(" unexpected error ")
+    
+    myList.append(minVal)
+
+
+    while len(myList) <= xElements:
+        lastPos = myList[-1]
+        newVal  = lastPos + 1
+        myList.append(newVal)
+        
+        if len(myList) == xElements:
+            print(myList)
+            break
+        
+        else:
+            continue
+
+
 try:
     input01 = int(sys.argv[1])
     input02 = int(sys.argv[2])
@@ -16,30 +45,4 @@ except:
     sys.exit(" ERROR ")
 
 
-if input01 <= input02:
-    minVal = input01
-    xElements = input02 - input01
-elif input01 >= input02:
-    minVal = input02
-    xElements = input01 - input02
-else:
-    print(" unexpected error ")
-
-
-myList = []
-
-
-myList.append(minVal)
-
-
-while len(myList) <= xElements:
-    lastPos = myList[-1]
-    newVal  = lastPos + 1
-    myList.append(newVal)
-    
-    if len(myList) == xElements:
-        print(myList)
-        break
-    
-    else:
-        continue
+from_min_to_max_minus_1(input01, input02)

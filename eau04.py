@@ -7,16 +7,16 @@ import sys
 
 
 # will calculate the next Prime number even if the input is not a Prime number
-def nextPrimeAnyway(n):
+def next_prime_anyway(n):
 
     newVal = n + 1
 
-    while not isPrimeNumber(newVal):
+    while not is_prime_number(newVal):
 
         #print("newVal is equal to %d" % (newVal))
         newVal += 1
 
-        if isPrimeNumber(newVal):
+        if is_prime_number(newVal):
             #print(" proof of access #1 ")
             print(newVal)
             break
@@ -26,18 +26,18 @@ def nextPrimeAnyway(n):
 
 
 # will calculate the next Prime number IF the input is a Prime number
-def nextPrime(n):
+def next_prime_if_prime_is_given(n):
 
     newVal = myNum + 1
 
-    if isPrimeNumber(n): #si il s'agit bien d'un nombre premier
+    if is_prime_number(n): #si il s'agit bien d'un nombre premier
         
-        while not isPrimeNumber(newVal):
+        while not is_prime_number(newVal):
 
             #print("newVal is equal to %d" % (newVal))
             newVal += 1
 
-            if isPrimeNumber(newVal):
+            if is_prime_number(newVal):
                 #print(" proof of access #1 ")
                 print(newVal)
 
@@ -49,7 +49,7 @@ def nextPrime(n):
 
 
 # Define if a digit/number is a prime one or not
-def isPrimeNumber(myNum):
+def is_prime_number(myNum):
     try:
 
         #wrongResult = " %d n'est pas un nombre premier " % (myNum)
@@ -100,4 +100,4 @@ except:
     sys.exit(" -1 ")
 
 
-nextPrimeAnyway(myNum)
+next_prime_anyway(myNum)

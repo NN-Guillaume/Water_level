@@ -12,7 +12,7 @@ base = [0, 1, 1, 2]
 
 
 #build a list by adding the last and before-last values together
-def mathFibo ():
+def math_fibo ():
     end_nber = base[-1] # get the last element in the list
     before_end = base[-2] # get the before-last element in the list
 
@@ -28,7 +28,7 @@ except:
 
 
 while indice != len(base)-1:
-    mathFibo()
+    math_fibo()
     if  indice == len(base)-1:
         print(base)
         print(" The index n°%d correspond to the value %d in the Fibonacci continuity" % (indice, base[-1]))
