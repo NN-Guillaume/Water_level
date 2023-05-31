@@ -21,6 +21,7 @@ def from_min_to_max_minus_1(val1, val2):
         xElements = val1 - val2
     else:
         print(" unexpected error ")
+        return
     
     myList.append(minVal)
 

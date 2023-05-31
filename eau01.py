@@ -2,35 +2,9 @@
 
 # Créer un programme qui affiche toutes les différentes combinaisons de 2 nombres entre 00 et 99 dans l'ordre croissant.
 
-def go_up(leftArg, rightArg):
+def display_two_numbers():
+    for i in range(100):
+        for j in range(i, 100):
+            print(f"{i:02d}{j:02d}", end=", ")
 
-    display = (" %d  %d " % (leftArg, rightArg))
-
-    while leftArg != 99 and rightArg != 99:
-
-        if rightArg == 0 or rightArg <= 99:
-
-            rightArg += 1
-            print("R = %d" % (rightArg))
-
-            if rightArg == 99 and leftArg <= 99:
-
-                leftArg += 1
-                rightArg = 0
-                print("L = %d" % (leftArg))
-
-                #print(display, end=' ') # FUCKING ENDLESS 0 ! ! !
-
-        elif rightArg == 99 and leftArg == 99:
-            print(" E N D ")
-            break
-
-        else:
-            continue
-
-
-leftCount = 0
-rightCount = 0
-
-
-go_up(leftCount, rightCount)
+display_two_numbers()

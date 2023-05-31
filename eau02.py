@@ -8,9 +8,9 @@ import sys
 
 try:
     arguments = str(sys.argv[1]) # exemple --->     "1000 milliards de 1000 millions de 1000 sabords !"
-    listArgs = arguments.rsplit(" ")
-    reverseList = (listArgs[::-1])
-    print(*reverseList, sep='\n')
+    list_args = arguments.rsplit(" ")
+    reverse_list = (list_args[::-1])
+    print(*reverse_list, sep='\n')
     
     # the code below convert into a string and print in reverse on a single line
     #displayStr = " ".join(reverseList) 
